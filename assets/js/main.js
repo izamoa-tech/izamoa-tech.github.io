@@ -32,7 +32,7 @@
             }
         }
     });
-    $('.owl-carousel').owlCarousel({
+    $('.works-list').owlCarousel({
         loop:true,
         margin:10,
         nav:true,
@@ -49,6 +49,15 @@
                 items:3
             }
         }
+    })
+    $('.testimonials-list').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        dots:true,
+        navText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
+        items: 1,
+        singleItem: true
     })
 })(jQuery);
 
