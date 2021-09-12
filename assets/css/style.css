@@ -640,7 +640,7 @@ section h1{
     max-width: 125px;
     max-height: 125px;
     border-radius: 50%;
-    background: #5B5C70;
+    /*background: #5B5C70;*/
     position: relative;
     display: flex;
     align-items: center;
@@ -649,7 +649,7 @@ section h1{
 }
 .team-element .profile-picture img{
     object-fit: cover;
-    min-height: 100%;
+    height: 100%;
 }
 .team-element .social-links{
     display: flex;
@@ -665,7 +665,7 @@ section h1{
     color: #FFFFFF;
     opacity: 1;
 }
-.team-element .socials i{
+.social-links i{
     font-size: 16px;
 }
 .team-element .profile-mail i{
@@ -685,4 +685,390 @@ section h1{
     color: #2caae1;
     margin: 10px 0 5px 0;
     letter-spacing: 0.06em;
+}
+#contact{
+    background: #212330;
+}
+.contact-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 100px 0;
+}
+.contact-info div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 10px;
+    padding: 10px;
+}
+.contact-info i{
+    background: gray;
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 2px;
+    font-size: 20px;
+}
+.contact-info h2{
+    margin: 30px;
+    font-size: 23px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.contact-info p{
+    font-size: 14px;
+}
+.contact-info .address i{
+    background: #00D4AB;
+}
+.contact-info .phone i{
+    background: #00BCD5;
+}
+.contact-info .email i{
+    background: #4071CA;
+}
+.contact-info .hours i{
+    background: #ADA014;
+}
+.form-container{
+    width: 100%;
+}
+input, textarea{
+    background-color: #191828;
+    border: 1px solid gray;
+    border-radius: 2px;
+    /*flex: 1;*/
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+}
+input[type=text]:focus{
+    border: 1px solid #00BCD5 !important;
+}
+button[type=submit]{
+    border-radius: 5px;
+    background-color: #00BCD5;
+    color: #C4C4C4;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 8px 20px;
+    margin: 8px 0;
+    border: none;
+}
+form.php-email-form .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+form.php-email-form .row .form-group{
+    width: 100%;
+    margin-left: 35px;
+}
+form.php-email-form .row .form-group:first-child{
+    margin-left: 0;
+}
+
+#contact .php-email-form {
+    width: 100%;
+}
+
+#contact .php-email-form .form-group {
+    padding-bottom: 8px;
+}
+
+#contact .php-email-form .validate {
+    display: none;
+    color: red;
+    margin: 0 0 15px 0;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+#contact .php-email-form .error-message {
+    display: none;
+    color: #fff;
+    background: #ed3c0d;
+    text-align: left;
+    padding: 15px;
+    font-weight: 600;
+}
+
+#contact .php-email-form .error-message br + br {
+    margin-top: 25px;
+}
+
+#contact .php-email-form .sent-message {
+    display: none;
+    color: #fff;
+    background: #18d26e;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+}
+
+#contact .php-email-form .loading {
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+#contact .php-email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #18d26e;
+    border-top-color: #eee;
+    -webkit-animation: animate-loading 1s linear infinite;
+    animation: animate-loading 1s linear infinite;
+}
+
+#contact .php-email-form input, #contact .php-email-form textarea {
+    box-shadow: none;
+    font-size: 14px;
+}
+
+
+#contact .php-email-form button[type="submit"] {
+    transition: 0.4s;
+}
+
+#contact .php-email-form button[type="submit"]:hover {
+    background: #0880e8;
+    color: #fff;
+}
+footer#mailconfcheck{
+    display: flex;
+    flex-direction: row;
+
+}
+#mailconfcheck label{
+    color: gray;
+}
+#mailconf{
+    width: inherit;
+}
+input[type=checkbox] {
+    position: relative;
+    cursor: pointer;
+    margin-right: 15px;
+}
+input[type=checkbox]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background-color: #505050;
+    border-radius: 2px;
+}
+input[type=checkbox]:checked:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    top: 0;
+    left: 0;
+    border-radius: 2px;
+    background-color: lightgreen;
+}
+input[type=checkbox]:checked:after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 10px;
+    border-radius: 2px;
+
+}
+
+@-webkit-keyframes animate-loading {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate-loading {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background: #212330;
+}
+footer .php-email-form .row{
+    display: flex;
+    flex-direction: column;
+}
+footer .php-email-form .row .form-group{
+    margin: 0;
+}
+.footer-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer .php-email-form {
+    width: 100%;
+}
+
+footer .php-email-form .form-group {
+    padding-bottom: 0;
+}
+footer input, footer textarea{
+    padding: 8px 15px;
+    margin: 6px 0;
+}
+footer .php-email-form .validate {
+    display: none;
+    color: red;
+    margin: 0 0 15px 0;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+footer .php-email-form .error-message {
+    display: none;
+    color: #fff;
+    background: #ed3c0d;
+    text-align: left;
+    padding: 15px;
+    font-weight: 600;
+}
+
+footer .php-email-form .error-message br + br {
+    margin-top: 25px;
+}
+
+footer .php-email-form .sent-message {
+    display: none;
+    color: #fff;
+    background: #18d26e;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+}
+
+footer .php-email-form .loading {
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+footer .php-email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #18d26e;
+    border-top-color: #eee;
+    -webkit-animation: animate-loading 1s linear infinite;
+    animation: animate-loading 1s linear infinite;
+}
+
+footer .php-email-form input, footer .php-email-form textarea {
+    box-shadow: none;
+    font-size: 12px;
+}
+
+
+footer .php-email-form button[type="submit"] {
+    transition: 0.4s;
+}
+
+footer .php-email-form button[type="submit"]:hover {
+    background: #0880e8;
+    color: #fff;
+}
+
+footer h2{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.08rem;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
+.footer-top, .footer-bottom{
+    padding: 60px 20%;
+}
+.footer-top{
+    background: #1d1f2c;
+}
+.footer-top .contact .info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer-top .contact .info p{
+    font-size: 14px;
+    line-height: 20px;
+    color: #808F99;
+}
+.footer-top .contact{
+    flex-grow: 2;
+}
+.footer-top .email-us{
+    margin-left: 100px;
+    flex-grow: 1;
+}
+footer .email-us button[type=submit]{
+    background-color: #394050;
+    font-size: 12px;
+}
+footer .email-us button[type=submit]:hover{
+    background-color: #808F99;
+}
+.footer-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #191828;
+    font-size: 14px;
+    color: #808F99;
+}
+.footer-bottom .legal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footer-bottom .legal a{
+    margin: 0 10px;
+}
+.footer-bottom div a{
+    color: #808F99;
+}
+.footer-bottom div{
+    color: #808F99;
+}
+.footer-bottom i{
+    color: #808F99;
+}
+.footer-bottom .social-links i{
+    margin: 0 5px;
+}
+.footer-bottom .social-links a:last-child{
+    margin-right: 0;
+}
+.footer-bottom .social-links a:first-child{
+    margin-left: 0;
 }
