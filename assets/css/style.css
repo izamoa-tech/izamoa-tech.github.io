@@ -17,8 +17,9 @@ section {
     flex-direction: column;
     background: green;
 }
-body {
+body, html {
     overflow-x: hidden;
+    width: 100vw;
 }
 header {
     margin: 10px 0;
