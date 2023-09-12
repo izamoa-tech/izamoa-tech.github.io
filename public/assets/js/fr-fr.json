@@ -73,5 +73,9 @@
 	"FOOTER_CONTACT_BTN": "Contactez-nous",
 	"FOOTER_CONTACT_CTA": "Vous avez un projet en tête ?",
 	"FOOTER_CONTACT_TITLE": "Contactez-nous",
-	"FOOTER_LINK_TITLE": "Liens rapides"
+	"FOOTER_LINK_TITLE": "Liens rapides",
+
+	"404_TITLE": "Désolé ! Page non trouvée",
+	"404_SUBTITLE": "La page que vous recherchez n'existe pas ou a été déplacée",
+	"404_BTN": "Retour à la <br />Page d'accueil"
 }
