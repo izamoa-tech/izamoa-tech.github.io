@@ -1,0 +1,16 @@
+{
+	"name": "habaka",
+	"version": "1.0.0",
+	"description": "Habaka.tech landing site",
+	"main": "server.js",
+	"scripts": {
+		"dev": "nodemon server.js",
+		"start": "nodeserver.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "mitoavina",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.18.2"
+	}
+}
